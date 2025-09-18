@@ -223,7 +223,10 @@ class ECG:
 		returns the final dataframe
 		"""
 		#first load the trained pca
-		pca_loaded_model = joblib.load('PCA_ECG (1).pkl')
+		pca_loaded_model = joblib.load(
+			os.path.join(os.path.dirname(__file__), "PCA_ECG (1).pkl")
+		)
+
 		result = pca_loaded_model.transform(test_final)
 		final_df = pd.DataFrame(result)
 		return final_df
@@ -233,7 +236,10 @@ class ECG:
 		This Function Loads the pretrained model and perfrom ECG classification
 		return the classification Type.
 		"""
-		loaded_model = joblib.load('Heart_Disease_Prediction_using_ECG (4).pkl')
+		loaded_model = joblib.load(
+			os.path.join(os.path.dirname(__file__), "Heart_Disease_Prediction_using_ECG (4).pkl")
+		)
+
 		result = loaded_model.predict(final_df)
 		if result[0] == 1:
 			return "You ECG corresponds to Myocardial Infarction"
