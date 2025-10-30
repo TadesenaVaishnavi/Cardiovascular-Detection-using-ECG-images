@@ -42,8 +42,6 @@ The tricky path here is feature extraction from images; if done correctly and op
 
 **Abstract Link**: https://github.com/rameshavinash94/Cardiovascular-Detection-using-ECG-images/blob/main/docs/Digitizing%20ECG%20signals%20and%20detection%20of%20Cardiovascular%20diseases.docx.pdf
 
-**PROJECT REPORT:** https://github.com/rameshavinash94/Cardiovascular-Detection-using-ECG-images/blob/main/docs/Final%20project%20submission.pdf
-
 
 ![](https://raw.githubusercontent.com/rameshavinash94/Cardiovascular-Detection-using-ECG-images/main/img/Architecture_Diagram.png)
 
